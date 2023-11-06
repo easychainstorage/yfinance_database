@@ -16,3 +16,6 @@ arguments:
   --currency_model       Name of your model in Django for list of currencies.
 ```
 
+Example output:
+ - [currency pairs](example/list_pairs_currency.jsonl)
+ - [historical rates](example/historical_rates.jsonl)

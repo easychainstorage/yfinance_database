@@ -79,14 +79,14 @@ if __name__ == "__main__":
         help="Link to list currencies in yahoo finance.",
     )
     parser.add_argument(
-        "--rates",
+        "--rates_model",
         default="ExchangeRate",
         help="Name of model in Django for historical rates.",
     )
     parser.add_argument(
-        "--currency",
+        "--currency_model",
         default="Currency",
         help="Name of model in Django for list of currencies.",
     )
     args = parser.parse_args()
-    main(args.yahoo_link, args.rates, args.currency)
+    main(args.yahoo_link, args.rates_model, args.currency_model)
